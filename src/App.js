@@ -6,9 +6,13 @@ function App() {
 
   const [count, setCount] = useState(0)
 
+//for the addition
+
 const add = () => {
   setCount (prev => count + 1)
 }
+
+//for the subtraction
 
 const minus = () => {
   setCount  (prev => count - 1)
