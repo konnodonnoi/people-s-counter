@@ -12,10 +12,10 @@ const add = () => {
   setCount (prev => count + 1)
 }
 
-//for the subtraction
+//for the reset
 
 const minus = () => {
-  setCount  (prev => count - 1)
+  setCount  (prev => count * 0)
 }
 
   return (
@@ -24,11 +24,11 @@ const minus = () => {
 people entered:
 </h1>
 
-<button className='button' onClick={minus}>-</button>
+<button className='button' onClick={reset}>reset</button>
 <h2>
   {count}
   </h2>
-  <button className='button' onClick={add}>+</button>
+  <button className='button' onClick={add}>increment</button>
   
     </div>
   );
