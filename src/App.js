@@ -14,7 +14,7 @@ const add = () => {
 
 //for the reset
 
-const minus = () => {
+const reset = () => {
   setCount  (prev => count * 0)
 }
 
@@ -24,12 +24,14 @@ const minus = () => {
 people entered:
 </h1>
 
-<button className='button' onClick={reset}>reset</button>
+
 <h2>
   {count}
   </h2>
-  <button className='button' onClick={add}>increment</button>
-  
+  <div>
+  <button className='increment-btn' onClick={add}>increment</button>
+  </div>
+  <button className='button' onClick={reset}>reset</button>
     </div>
   );
 }
